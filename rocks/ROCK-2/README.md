@@ -12,6 +12,7 @@ A Quartz can grow up to 10m.
 |   **Title** | Big milky Quartz |
 |     **Key** | ROCK-2 |
 | **Created** | 27/Oct/18 8:32 AM |
+| **Labels** | common, crystal, Quarts, rough, seethrough, semiprecious, white |
 | **Location Found** | Ceres, Worcester and Villiersdorp, Cape town11/02/2018 |
 | **Rock Type** | crystal |
 

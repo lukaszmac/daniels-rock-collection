@@ -11,6 +11,7 @@ I got this for my birthday from Aunty Erica.
 |   **Title** | milky quartz Crystal |
 |     **Key** | ROCK-9 |
 | **Created** | 27/Oct/18 1:41 PM |
+| **Labels** | common, crystal, crystallized, pointy, Quarts, rough, seethrough, semiprecious, shiny, white |
 | **Location Found** | Africa, South America, north america, Europe, Asia, Australasia.found 19/12/2018 |
 | **Rock Type** | crystal |
 

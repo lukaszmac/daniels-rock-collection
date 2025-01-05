@@ -11,6 +11,7 @@ I got this for my birthday.
 |   **Title** | Crystallized Amethyst |
 |     **Key** | ROCK-8 |
 | **Created** | 27/Oct/18 1:39 PM |
+| **Labels** | common, crystallized, pointy, purple, Quarts, rough, seethrough, semiprecious, sharp, shiny |
 | **Location Found** | North America South America Europe Africa Asia Australia. Collected 23/082022 |
 | **Rock Type** | Metamorphic |
 

@@ -12,6 +12,7 @@ In the sea it was worn down.
 |   **Title** | Sculpted black slate |
 |     **Key** | ROCK-14 |
 | **Created** | 04/Nov/18 9:49 AM |
+| **Labels** | common, metamorphic, rough, round, sculpted |
 | **Location Found** | Swartruggens, in the Groot Marico District 10/10/2020 |
 | **Rock Type** | metamorphic |
 

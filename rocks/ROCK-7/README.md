@@ -10,6 +10,7 @@ This is an old spark plug that I found it in the sea.
 |   **Title** | Fossilized  Spark Plug |
 |     **Key** | ROCK-7 |
 | **Created** | 27/Oct/18 12:29 PM |
+| **Labels** | brown, fossilized, irregular, man-made, orange, rough, sedementery, shells |
 | **Location Found** | Trafalgar, KWazulu-Natal 09/01/2018 |
 | **Rock Type** | Sedementery |
 

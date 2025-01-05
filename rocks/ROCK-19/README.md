@@ -13,6 +13,7 @@ I found these in the sea
 |   **Title** | Citrine |
 |     **Key** | ROCK-19 |
 | **Created** | 06/Jun/19 5:59 PM |
+| **Labels** | common, crystal, crystallized, orange, pointy, polished, Quarts, rough, semiprecious, shiny |
 | **Location Found** | Trafalgar, KWazulu-Natal ?/12/2019 |
 | **Rock Type** | metamorphic |
 

@@ -20,6 +20,7 @@ ${rock.Description}
 |   **Title** | ${rock.Summary} |
 |     **Key** | ${rock['Issue key']} |
 | **Created** | ${rock.Created} |
+| **Labels** | LABELVALUES |
 | **EXTRA** | VALUES |
         `;
 
@@ -63,46 +64,66 @@ ${rock.Description}
         let extraValues = '';
 
         // Go through each field of the rock and check for custom fields:
+        const labels = [];
         for (let [key, value] of Object.entries(rock))
         {
-            // Check if this is a custom field:
-            const fieldToUsePattern =/Custom field/g;
-            if (key.match(fieldToUsePattern))
+            // Check if this is a label:
+            if (key.startsWith('Labels'))
             {
-                // This is a field to use.
+                // This is a label.
 
-                // Check if we should exclude this field:
-                const fieldToExcludePattern = /\[CHART\]|Rank/g;
-                if (key.match(fieldToExcludePattern)) continue;
-
-                // Now we know this is a field we are interested in.
-
-                // Make sure that we have a value:
-                if (!value) continue;
-
-                // Now we know we have a value of interest.
-
-                // Get the field name from the data:
-                let fieldName = key;
-                const fieldCleanUpPattern = /Custom field \((.+)\)/;
-                const fieldCleanMatches = fieldName.match(fieldCleanUpPattern);
-                if (fieldCleanMatches)
+                // Check if we have a value:
+                if (value)
                 {
-                    fieldName = fieldCleanMatches[1];
+                    // We have a value for this label.
+
+                    // Add it to our labels for this rock:
+                    labels.push(value);
                 }
-
-                // Create the row entry for our content:
-                const rowEntry = `| **${fieldName}** | ${value} |\n`;
-
-                // Add this to our extra values:
-                extraValues += rowEntry;
             }
+            else
+            {
+                // Check if this is a custom field:
+                const fieldToUsePattern = /Custom field/g;
+                if (key.match(fieldToUsePattern))
+                {
+                    // This is a field to use.
 
+                    // Check if we should exclude this field:
+                    const fieldToExcludePattern = /\[CHART\]|Rank/g;
+                    if (key.match(fieldToExcludePattern)) continue;
+
+                    // Now we know this is a field we are interested in.
+
+                    // Make sure that we have a value:
+                    if (!value) continue;
+
+                    // Now we know we have a value of interest.
+
+                    // Get the field name from the data:
+                    let fieldName = key;
+                    const fieldCleanUpPattern = /Custom field \((.+)\)/;
+                    const fieldCleanMatches = fieldName.match(fieldCleanUpPattern);
+                    if (fieldCleanMatches)
+                    {
+                        fieldName = fieldCleanMatches[1];
+                    }
+
+                    // Create the row entry for our content:
+                    const rowEntry = `| **${fieldName}** | ${value} |\n`;
+
+                    // Add this to our extra values:
+                    extraValues += rowEntry;
+                }
+            }
         }
 
 
         // Add the extra values to the end of the table:
         contentToUse = contentToUse.replaceAll('| **EXTRA** | VALUES |', extraValues);
+
+        // Add the labels the end of the table:
+        contentToUse = contentToUse.replaceAll('LABELVALUES', labels.join(', '));
 
         // Write the readme file:
         console.log(contentToUse);

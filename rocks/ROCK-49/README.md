@@ -11,6 +11,7 @@
 |   **Title** | Howlite |
 |     **Key** | ROCK-49 |
 | **Created** | 03/Dec/21 10:58 AM |
+| **Labels** | common, polished, round, sedementery, semiprecious, shiny, wight |
 | **Location Found** | Sterling Borax Mine, Calafornia |
 | **Rock Type** | Sedimentary |
 

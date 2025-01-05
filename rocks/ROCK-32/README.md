@@ -9,6 +9,7 @@
 |   **Title** | Devil’s dice |
 |     **Key** | ROCK-32 |
 | **Created** | 20/Jan/21 8:24 AM |
+| **Labels** | black, common, pointy, rough, semiprecious, sharp |
 | **Location Found** | Asia |
 | **Rock Type** | Metamorphic |
 

@@ -10,6 +10,8 @@ This is a fascinating rock that I found at the sea.
 |   **Title** | Fossilized Sea shells-1 |
 |     **Key** | ROCK-1 |
 | **Created** | 27/Oct/18 7:17 AM |
+| **Labels** | brown, fossilized, rough, sedementery, shells |
 | **Location Found** | Trafalgar, KWazulu-Natal 30/12/2019 |
 | **Rock Type** | Sedimentary |
 
+        
