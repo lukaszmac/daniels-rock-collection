@@ -4,6 +4,12 @@ const path = require("path");
 
 let inputStream = fs.createReadStream('Jira Export Excel CSV (all fields) 20250102165131.csv', 'utf8');
 
+
+// Create the rock list for the main readme file:
+let rockListContent = `## Rock List
+| #                      | Rock                    | Image                                              |
+|------------------------|-------------------------|----------------------------------------------------|`;
+
 inputStream
     .pipe(new CsvReadableStream({ parseNumbers: true, parseBooleans: true, trim: true, multiline: true,  allowQuotes: true, asObject: true}))
     .on('data', function (rock) {
@@ -48,9 +54,17 @@ ${rock.Description}
 
         // Create the references to the image for each image:
         let imageReferences = '';
+        let firstImagePath = undefined;
         for (let pathToRockImage of allImageFilesInRockFolder)
         {
-            // Get the path to the image:
+            // Check if this is the first image because we need it for the rock list:
+            if (!firstImagePath)
+            {
+                // Get the path to the image:
+                firstImagePath =  path.join(rockFolderPath, pathToRockImage);
+            }
+
+            // Get the reference to the image:
             const imageReference = `<img height="300px" src="${pathToRockImage}"/>`;
 
             // Add this to the end of our image references:
@@ -129,7 +143,24 @@ ${rock.Description}
         console.log(contentToUse);
         fs.writeFileSync(rockReadmePath, contentToUse);
 
+
+        // Get the rock list entry for this rock:
+        // The path to the first image is here: firstImagePath
+        const rockListEntry = `| [${rock['Issue key']}](${rockFolderPath}) | ${rock.Summary} | <img src="${firstImagePath}" height="100px"/> |`;
+
+        // Update the rock list for this entry:
+        rockListContent += '\n' + rockListEntry;
+
     })
     .on('end', function () {
         console.log('No more rows!');
+
+
+        // Update the main readme file with the new rock list:
+        let readmeContents = fs.readFileSync('README.md', 'utf-8');
+        const rockListPatternToReplace = /## Rock List\s+(.+\|\s+)+/mg;
+        readmeContents = readmeContents.replaceAll(rockListPatternToReplace, rockListContent);
+        fs.writeFileSync('README.md', readmeContents);
+
     });
+
