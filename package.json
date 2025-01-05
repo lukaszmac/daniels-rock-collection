@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/lukaszmac/daniels-rock-collection/issues"
   },
-  "homepage": "https://github.com/lukaszmac/daniels-rock-collection#readme"
+  "homepage": "https://github.com/lukaszmac/daniels-rock-collection#readme",
+  "dependencies": {
+    "csv-reader": "^1.0.12"
+  }
 }
