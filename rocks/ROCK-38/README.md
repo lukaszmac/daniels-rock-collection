@@ -9,4 +9,7 @@
 |   **Title** | Fossilized sand ripples |
 |     **Key** | ROCK-38 |
 | **Created** | 21/Jan/21 11:55 AM |
+| **Location Found** | North America South America Europe Africa Asia Australia |
+| **Rock Type** | Sedimentary |
+
         

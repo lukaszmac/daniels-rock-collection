@@ -11,4 +11,7 @@ I found it on a mountaintop
 |   **Title** | Vesicular Basalt |
 |     **Key** | ROCK-20 |
 | **Created** | 06/Jun/19 6:07 PM |
+| **Location Found** | Drakensberg. 21/03/2023 |
+| **Rock Type** | Igneous |
+
         

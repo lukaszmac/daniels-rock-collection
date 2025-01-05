@@ -9,4 +9,7 @@
 |   **Title** | Lapis lazuli |
 |     **Key** | ROCK-30 |
 | **Created** | 20/Jan/21 8:22 AM |
+| **Location Found** | Europe |
+| **Rock Type** | Sedimentary |
+
         

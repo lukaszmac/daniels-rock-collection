@@ -14,4 +14,7 @@
 |   **Title** | Blue tigers eye |
 |     **Key** | ROCK-36 |
 | **Created** | 21/Jan/21 9:45 AM |
+| **Location Found** | Australia Burma India Namibia United States Brazil Canada China Korea and Spain |
+| **Rock Type** | Metamorphic |
+
         

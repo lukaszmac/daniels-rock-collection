@@ -15,4 +15,7 @@
 |   **Title** | Turquoise |
 |     **Key** | ROCK-40 |
 | **Created** | 21/Jan/21 12:10 PM |
+| **Location Found** | North America South America Europe Africa Asia Australia |
+| **Rock Type** | Metamorphic |
+
         

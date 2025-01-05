@@ -12,4 +12,7 @@ We found it on a mountaintop
 |   **Title** | Quartz inside an iron oxide rock |
 |     **Key** | ROCK-22 |
 | **Created** | 06/Jun/19 6:19 PM |
+| **Location Found** | On a mountaintop |
+| **Rock Type** | Igneous |
+
         

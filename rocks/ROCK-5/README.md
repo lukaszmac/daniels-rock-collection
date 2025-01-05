@@ -10,4 +10,7 @@ It is like a normal Quartz just it looks like a Rose.
 |   **Title** | Polished Rose Quartz |
 |     **Key** | ROCK-5 |
 | **Created** | 27/Oct/18 11:24 AM |
+| **Location Found** | North America South America Europe Africa Asia Australia. collected 30/09/2016 |
+| **Rock Type** | crystal |
+
         

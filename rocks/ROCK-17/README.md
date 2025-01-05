@@ -9,4 +9,7 @@ It has a dirty outside and a amazing inside.
 |   **Title** | A Geoid with agate & milky quartz Crystals in side |
 |     **Key** | ROCK-17 |
 | **Created** | 04/Nov/18 10:48 AM |
+| **Location Found** | North America South America Europe Africa Asia Australia |
+| **Rock Type** | sedimentary |
+
         

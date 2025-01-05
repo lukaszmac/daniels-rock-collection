@@ -18,4 +18,7 @@
 |   **Title** | Pyrite |
 |     **Key** | ROCK-34 |
 | **Created** | 20/Jan/21 9:05 AM |
+| **Location Found** | North America South America Europe Africa Asia Australia Antarctica |
+| **Rock Type** | Metamorphic |
+
         

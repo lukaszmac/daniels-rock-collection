@@ -11,4 +11,7 @@
 |   **Title** | Howlite |
 |     **Key** | ROCK-49 |
 | **Created** | 03/Dec/21 10:58 AM |
+| **Location Found** | Sterling Borax Mine, Calafornia |
+| **Rock Type** | Sedimentary |
+
         

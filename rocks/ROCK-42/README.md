@@ -9,4 +9,7 @@
 |   **Title** | Crocidolite Asbestos |
 |     **Key** | ROCK-42 |
 | **Created** | 03/Dec/21 9:27 AM |
+| **Location Found** | South africa, russia asia |
+| **Rock Type** | acidic igneous rocks |
+
         

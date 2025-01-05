@@ -20,6 +20,7 @@ ${rock.Description}
 |   **Title** | ${rock.Summary} |
 |     **Key** | ${rock['Issue key']} |
 | **Created** | ${rock.Created} |
+| **EXTRA** | VALUES |
         `;
 
         let contentToUse = startingTemplate;
@@ -57,6 +58,51 @@ ${rock.Description}
 
         // Add the image references to the content:
         contentToUse = contentToUse.replaceAll('<img height="300px" src="10000.jpg"/>', imageReferences);
+
+        // Get all the extra values that we want for the rock:
+        let extraValues = '';
+
+        // Go through each field of the rock and check for custom fields:
+        for (let [key, value] of Object.entries(rock))
+        {
+            // Check if this is a custom field:
+            const fieldToUsePattern =/Custom field/g;
+            if (key.match(fieldToUsePattern))
+            {
+                // This is a field to use.
+
+                // Check if we should exclude this field:
+                const fieldToExcludePattern = /\[CHART\]|Rank/g;
+                if (key.match(fieldToExcludePattern)) continue;
+
+                // Now we know this is a field we are interested in.
+
+                // Make sure that we have a value:
+                if (!value) continue;
+
+                // Now we know we have a value of interest.
+
+                // Get the field name from the data:
+                let fieldName = key;
+                const fieldCleanUpPattern = /Custom field \((.+)\)/;
+                const fieldCleanMatches = fieldName.match(fieldCleanUpPattern);
+                if (fieldCleanMatches)
+                {
+                    fieldName = fieldCleanMatches[1];
+                }
+
+                // Create the row entry for our content:
+                const rowEntry = `| **${fieldName}** | ${value} |\n`;
+
+                // Add this to our extra values:
+                extraValues += rowEntry;
+            }
+
+        }
+
+
+        // Add the extra values to the end of the table:
+        contentToUse = contentToUse.replaceAll('| **EXTRA** | VALUES |', extraValues);
 
         // Write the readme file:
         console.log(contentToUse);

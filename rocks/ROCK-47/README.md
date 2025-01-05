@@ -11,4 +11,7 @@
 |   **Title** | Calcifite |
 |     **Key** | ROCK-47 |
 | **Created** | 03/Dec/21 10:40 AM |
+| **Location Found** | Africa, Asia, South America, North America, Astralasia, Indon Asia, brazil |
+| **Rock Type** | Igneous |
+
         

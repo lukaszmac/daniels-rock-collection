@@ -9,4 +9,7 @@
 |   **Title** | Pyrope garnet |
 |     **Key** | ROCK-31 |
 | **Created** | 20/Jan/21 8:24 AM |
+| **Location Found** | Asia |
+| **Rock Type** | Metamorphic |
+
         

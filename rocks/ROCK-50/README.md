@@ -11,4 +11,7 @@
 |   **Title** | RainForest Rhyolite |
 |     **Key** | ROCK-50 |
 | **Created** | 03/Dec/21 11:04 AM |
+| **Location Found** | Mount Hay, Wycarbah, Rockhampton Region in Queensland, Australia. |
+| **Rock Type** | extrusive igneous rock |
+
         
