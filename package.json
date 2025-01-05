@@ -1,0 +1,23 @@
+{
+  "name": "daniels-rock-collection",
+  "version": "1.0.0",
+  "description": "This is Daniels Rock Collection",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukaszmac/daniels-rock-collection.git"
+  },
+  "keywords": [
+    "Rocks"
+  ],
+  "author": "Daniel Machowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukaszmac/daniels-rock-collection/issues"
+  },
+  "homepage": "https://github.com/lukaszmac/daniels-rock-collection#readme"
+}
