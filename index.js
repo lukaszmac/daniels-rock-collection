@@ -45,6 +45,7 @@ ${rock.Description}
         // Get the file path to the rock folder:
         const rocksFolderPath = 'rocks';
         const rockFolderPath = path.join(rocksFolderPath, rock['Issue key']);
+        const rockFolderPathForRockList = `${rocksFolderPath}/${rock['Issue key']}`;
         const rockReadmePath = path.join(rockFolderPath, 'README.md');
 
 
@@ -146,7 +147,7 @@ ${rock.Description}
 
         // Get the rock list entry for this rock:
         // The path to the first image is here: firstImagePath
-        const rockListEntry = `| [${rock['Issue key']}](${rockFolderPath}) | ${rock.Summary} | <img src="${firstImagePath}" height="100px"/> |`;
+        const rockListEntry = `| [${rock['Issue key']}](${rockFolderPathForRockList}) | ${rock.Summary} | <img src="${firstImagePath}" height="100px"/> |`;
 
         // Update the rock list for this entry:
         rockListContent += '\n' + rockListEntry;
